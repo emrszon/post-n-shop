@@ -1,0 +1,24 @@
+{
+  "name": "post-n-shop",
+  "version": "1.0.0",
+  "description": "Prueba tecnica desarrollador Telematica LTDA. En esta carpeta se encuentran tanto el Front como el Backend de la solucion",
+  "main": "index.js",
+  "scripts": {
+    "pre-start": "concurrently \"cd API && npm install\" \"cd APP && npm install\"",
+    "start": "concurrently \"cd API && npm run start\" \"cd APP && npm run start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emrszon/post-n-shop.git"
+  },
+  "author": "Emerson Herrera Diaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emrszon/post-n-shop/issues"
+  },
+  "homepage": "https://github.com/emrszon/post-n-shop#readme",
+  "dependencies": {
+    "concurrently": "^7.5.0"
+  }
+}
